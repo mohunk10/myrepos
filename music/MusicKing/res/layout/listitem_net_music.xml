@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip" >
+
+        <ImageView
+            android:id="@+id/iv_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10.0dip"
+            android:src="@drawable/music_item_btn_favourite_normal"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_singer_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="10.0dip"
+            android:src="@drawable/player_cover_bg" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="歌曲名称"
+                android:textColor="@color/white"
+                android:textSize="18.0sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_artist"
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:paddingRight="15.0dip"
+                    android:singleLine="true"
+                    android:text="歌手姓名"
+                    android:textColor="@color/white"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:src="@drawable/icon_menu" 
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_download"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10.0dip" >
+
+                <ImageView
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:src="@drawable/ic_download" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="订购全曲"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_ringtone "
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10.0dip" >
+
+                <ImageView
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:src="@drawable/ic_ringtone" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="订购铃音"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

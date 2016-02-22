@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="titlebar_left_text">#ffffffff</color>
+    <color name="titlebar_text">#ffffffff</color>
+    <color name="titlebar_right_text">#ffffffff</color>
+    <color name="titlebar_bg">#ff33b5e5</color>
+    <color name="titlebar_line">#aaa</color>
+
+</resources>

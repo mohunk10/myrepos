@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/app_bg"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50.0dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="1.0dip"
+                android:paddingRight="1.0dip"
+                android:paddingTop="5.0dip" >
+
+                <ImageButton
+                    android:id="@+id/activity_player_ib_return"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/player_btn_return_style"
+                    android:contentDescription="@string/app_name" />
+
+                <!-- 注意！PushView可以直接使用TextView的属性，但是不会出现帮助，需要自己去TextView里复制 -->
+
+                <com.music.view.PushView
+                    android:id="@+id/activity_player_tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:padding="2.0dip"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="22.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:gravity="center_vertical|right"
+                android:paddingBottom="5.0dip"
+                android:paddingLeft="25.0dip"
+                android:paddingRight="25.0dip"
+                android:paddingTop="1.0dip" >
+
+                <!-- 注意！PushView可以直接使用TextView的属性，但是不会出现帮助，需要自己去TextView里复制 -->
+
+                <com.music.view.PushView
+                    android:id="@+id/activity_player_tv_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="30.0dip"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/white"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/activity_player_cover"
+                        android:layout_width="130.0dip"
+                        android:layout_height="130.0dip"
+                        android:background="@drawable/player_cover_bg"
+                        android:contentDescription="@string/app_name"
+                        android:padding="3.0dip" />
+
+                    <!-- 注意！PushView可以直接使用TextView的属性，但是不会出现帮助，需要自己去TextView里复制 -->
+
+                    <com.music.view.PushView
+                        android:id="@+id/activity_player_tv_artist"
+                        android:layout_width="130.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10.0dip"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <com.music.view.VisualizerView
+                    android:id="@+id/activity_player_visualizer"
+                    android:layout_width="270dip"
+                    android:layout_height="130dip" />
+
+                <com.music.lyric.LyricView
+                    android:id="@+id/activity_player_lyric"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginRight="8.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100.0dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20.0dip"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/activity_player_tv_time_current"
+                        android:layout_width="50.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingRight="8.0dip"
+                        android:textColor="@color/white"
+                        android:textSize="13.0sp"
+                        android:textStyle="bold" />
+
+                    <SeekBar
+                        android:id="@+id/activity_player_seek"
+                        android:layout_width="200.0dip"
+                        android:layout_height="15.0dip"
+                        android:max="0"
+                        android:paddingTop="1.0dip"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/player_seekbar_style"
+                        android:thumb="@null"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/activity_player_tv_time_total"
+                        android:layout_width="50.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="8.0dip"
+                        android:textColor="@color/white"
+                        android:textSize="13.0sp"
+                        android:textStyle="bold" 
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="7.0dip"
+                    android:paddingRight="7.0dip" >
+
+                    <!-- 这里出现问题，android:background引用color里的transparent并没达到透明效果，搞不清楚什么原因 -->
+                    <!-- 原因已经找到，在raw文件夹下放了图片资源，竟然能影响到颜色，在raw文件夹下的图片会降低质量 -->
+
+                    <ImageButton
+                        android:id="@+id/activity_player_ib_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/player_btn_mode_normal_style" />
+
+                    <ImageButton
+                        android:id="@+id/activity_player_ib_previous"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/player_btn_previous_style" />
+
+                    <ImageButton
+                        android:id="@+id/activity_player_ib_play"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/player_btn_play_style" />
+
+                    <ImageButton
+                        android:id="@+id/activity_player_ib_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/player_btn_next_style" />
+
+                    <ImageButton
+                        android:id="@+id/activity_player_ib_favorite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/player_btn_favorite_nostar_style" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

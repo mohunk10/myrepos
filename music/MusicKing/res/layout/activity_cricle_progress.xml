@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.music.king.app"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <com.music.view.RoundProgressBar
+        android:id="@+id/roundProgressBar"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android_custom:roundColor="#D1D1D1"
+        android_custom:roundProgressColor="#C2C2C2"
+        android_custom:textColor="#9A32CD"
+        android_custom:roundWidth="1dip"
+        android_custom:textSize="18sp" 
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
