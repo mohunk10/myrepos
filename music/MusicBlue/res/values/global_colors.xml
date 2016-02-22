@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="global_color">#ff33b5e5</color>
+    <color name="global_color_dark">#a2732e</color>
+    <color name="global_color_darker_gray">#aaa</color>
+    <color name="global_divider_line">#ddd</color>
+    <color name="player_control_bg">#3f000000</color>
+    <color name="pressed_bg">#8033B5E5</color>
+
+</resources>

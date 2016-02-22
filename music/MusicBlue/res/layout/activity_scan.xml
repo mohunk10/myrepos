@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/app_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_titlebar" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5.0dip"
+        android:singleLine="true"
+        android:text="请选择要扫描的路径"
+        android:textColor="@color/white"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/global_divider_line" />
+
+    <FrameLayout
+        android:id="@id/activity_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" >
+    </FrameLayout>
+
+</LinearLayout>
