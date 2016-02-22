@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">乐动生活</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="back_exit_tips">再按一次退出程序</string>
+    <string name="copyright">版权所有 2010 – 2020 广州悦人网络科技有限公司（以下简称：悦人科技）保留所有权利。    
+本软件只供购买者使用，没有悦人科技的书面授权，不得因任何目的，以任何方式如电子的、机械的、反编译或其它方式，包括影印和记录，复制和传播本软件的任何部分。 悦人科技非常欢迎关于该软件的任何意见和建议，请将你的建议e-mail给kf@smilegames.cn。</string>
+    <string name="about">公司名称：广州悦人网络科技有限公司\n客服电话：02038936227\n客服邮箱：kf@smilegames.cn\n公司网站：http://www.smilegames.cn/</string>
+
+</resources>

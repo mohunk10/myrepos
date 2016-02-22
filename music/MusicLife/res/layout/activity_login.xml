@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/app_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20.0dip" >
+
+            <com.music.view.Input
+                xmlns:input="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/in_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:background="@color/player_control_bg"
+                android:hint="请输入用户名\\手机号"
+                android:maxLength="20"
+                android:padding="10.0dip"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                input:inputClear="@drawable/clear"
+                input:inputIcon="@drawable/ic_user"
+                input:inputShowSoftInputOnError="true"
+                input:inputTipEmpty="用户名不能为空"
+                input:inputTipPattern="用户名格式不合法"
+                input:inputTipType="alert" />
+
+            <com.music.view.Input
+                xmlns:input="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/in_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:background="@color/player_control_bg"
+                android:hint="请输入密码"
+                android:maxLength="20"
+                android:padding="10.0dip"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                input:inputClear="@drawable/clear"
+                input:inputIcon="@drawable/ic_pwd"
+                input:inputShowSoftInputOnError="true"
+                input:inputTipEmpty="用户名不能为空"
+                input:inputTipPattern="用户名格式不合法"
+                input:inputTipType="alert" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:background="@color/player_control_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="tv_login"
+                android:padding="10.0dip"
+                android:singleLine="true"
+                android:text="登　录"
+                android:textColor="@color/white"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
